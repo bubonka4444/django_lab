@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block content %}
+    <header class="header">
+    </header>
+    <section style="margin-left: 100px">
+        <div>
+            <h1 style="font-size: 28px">Бунеев Алекандр Юрьевич</h1>
+            <h2>Студент группы ИСТбд-31</h2>
+            {% load static %}
+            <img src="{% static 'pages/images/placeholder.jpg' %}" width="200px" alt="photo">
+            <ul style="margin-left: 50px">
+                <h3>Список долгов:</h3>
+                <li>Алгоритмы и Структуры Данных </li>
+                <li>Схемотехника</li>
+                <li>Теория вероятностей и мат. статистика</li>
+                <li>Технологии программирования</li>
+                <li>Курсовая АиСД</li>
+            </ul>
+        </div>
+    </section>
+
+{% endblock %}
